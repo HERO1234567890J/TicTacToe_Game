@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lavender"
+    android:background="@drawable/pagebkg"
     tools:context=".MainActivity">
+
 
 
     <LinearLayout
@@ -18,7 +19,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="120dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:id="@+id/playerOneLayout"
             android:orientation="vertical"
@@ -31,11 +32,20 @@
                 android:layout_marginTop="20dp"
                 android:text="Player One"
                 android:id="@+id/playerOneName"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/lavender"
+                android:textColor="#F44336"
                 android:maxLines="1"/>
+            <TextView
+                android:id="@+id/playerOneScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Score: 0"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="40dp"
@@ -48,7 +58,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="120dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:id="@+id/playerTwoLayout"
@@ -62,12 +72,20 @@
                 android:layout_marginTop="20dp"
                 android:text="Player Two"
                 android:id="@+id/playerTwoName"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/lavender"
+                android:textColor="#4CAF50"
                 android:maxLines="1"/>
-
+            <TextView
+                android:id="@+id/playerTwoScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Score: 0"
+                android:textColor="#4CAF50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
